@@ -1,0 +1,67 @@
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  background: teal;
+  /*position: relative;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  background-color: black;
+  border: 1px solid pink;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+#box1 {
+  height: 10vh;
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  #box2, #box3, #box4, #box5, #box6, #box7 {
+    height: 25vh;
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 1000px) {
+  .gallery {
+    padding: 0;
+    width: 100vw;
+    border: 1px solid firebrick;
+    /*display: block;*/
+    margin-left: 7.5vw;
+    margin-right: 0;
+  }
+
+  #box2, #box3, #box4, #box5, #box6, #box7 {
+    height: 20vh;
+    width: 39vw;
+    float: left;
+    margin: 1vh 1vw 1vh 1vw;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .gallery {
+    width: 100vw;
+    border: 1px solid pink;
+  }
+
+  #box2, #box3, #box4, #box5, #box6, #box7 {
+    height: 10vh;
+    width: 29vw;
+    margin-left: 2.75vw;
+    float: left
+  }
+
+}
